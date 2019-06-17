@@ -22,7 +22,7 @@ class Crawler:
         with open("douban.json", "a", encoding="utf-8") as f:
             for content in content_list:
                 print(content)
-                f.write(json.dumps(content, ensure_ascii=False))
+                f.write(json.dumps(content, ensure_ascii=False,indent=2))
                 f.write("\n")
 
     def run(self):  #实现主要逻辑
